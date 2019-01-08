@@ -1,0 +1,113 @@
+<%- include('public/header.ejs')%>
+<script>
+var $num1 = 1;
+var $user = {};
+</script>
+</head>
+<body>
+<!--header-start-->
+<div class="headWrap">
+<header class="cl">
+			<div class="logo-nav fl">
+				<a href="/"  class="logo">兔找找</a>
+				<nav>
+					<a href="/" class="navAct">首页</a>
+					<a href="/add/">上传图片</a>
+					<a href="/rank/">用户排名</a>
+					<a href="/download/">APP下载</a>
+				</nav>
+			</div>
+			<div class="login-search fr">
+				<div class="search-part">
+					<div class="search-wrap">
+					<form action="/e/search/index.php" method="post">
+						<input type="hidden" name="classid" value="32">
+						<input type="hidden" name="show" value="title">
+						<input type="text" id="search" name="keyboard" placeholder="搜索你喜欢的">
+						<i class="search-ico"></i>
+					</form>
+					</div>
+				</div>
+    <div class="loginWrap">
+<!--login-start-->
+				<div class="login-register fr">
+					<a href="/e/member/login/" class="login">登陆</a>
+					<span></span>
+					<a href="/e/member/register/" class="register">注册</a>
+				</div>
+<!--login-end-->
+</div>
+			</div>
+		</header>
+</div>
+<div class="fillBox"></div>
+<!--header-end-->
+
+<div id="listBody">
+		<div class="tags"><a href="/" class="on">推荐</a>
+			<a href="/label/2962" alt="头像" >头像</a>
+			<a href="/label/2961" alt="壁纸" >壁纸</a>
+			<a href="/label/2960" alt="美食" >美食</a>
+			<a href="/label/2959" alt="文字" >文字</a>
+			<a href="/label/2958" alt="时尚" >时尚</a>
+			<a href="/label/2957" alt="萌宠" >萌宠</a>
+			<a href="/label/2955" alt="旅行" >旅行</a>
+			<a href="/label/2954" alt="美妆" >美妆</a>
+			<a href="/label/2952" alt="明星" >明星</a>
+			<a href="/label/2951" alt="家居" >家居</a>
+			<a href="/label/2949" alt="星座" >星座</a>
+			<a href="/label/2947" alt="美女" >美女</a>
+			<a href="/label/2946" alt="动漫" >动漫</a>
+			<a href="/label/2945" alt="健身" >健身</a>
+			<a href="/label/2944" alt="黑白" >黑白</a>
+			<a href="/label/2943" alt="欧美" >欧美</a>
+			<a href="/label/2940" alt="青春" >青春</a>
+			<a href="/label/2939" alt="文艺" >文艺</a>
+			<a href="/label/2938" alt="街拍" >街拍</a>
+			<a href="/label/2936" alt="纹身" >纹身</a>
+			<a href="/label/2935" alt="风景" >风景</a>
+		</div>
+		<div id="content">
+			<div class="main-list" data-page="index" data-ph='1'>
+			<ul id="waterfall">
+				<li><div><a href="/posts/photo/20006" target="_blank" title="倪妮小可爱"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2019/01/08/d4e754b68ddb29f3_300x300.jpg" alt="倪妮小可爱"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/20005" target="_blank" title="青春美少女欧阳娜娜"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2019/01/08/cef0f09f48f9e1bd_300x300.jpg" alt="青春美少女欧阳娜娜"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19974" target="_blank" title="吃西瓜吗？"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2019/01/05/3534c0e9fcc4401f_300x300.jpg" alt="吃西瓜吗？"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19971" target="_blank" title="干了这杯，你敢吗？"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2019/01/05/9b87dba9da621662_300x300.jpg" alt="干了这杯，你敢吗？"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19970" target="_blank" title="镜子破了，我们还能在一起吗？"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2019/01/03/0a1fe7fb64b50476_300x300.jpg" alt="镜子破了，我们还能在一起吗？"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19967" target="_blank" title="少女的青葱岁月"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2019/01/02/061f708898d04be1_300x300.jpg" alt="少女的青葱岁月"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19965" target="_blank" title="会发光的玻璃球，很ins哦"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/29/19fa17bb12716b95_300x300.jpg" alt="会发光的玻璃球，很ins哦"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19963" target="_blank" title="欧美少女壁纸"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/27/7d4e85c7b7eb055a_300x300.jpg" alt="欧美少女壁纸"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19962" target="_blank" title="now"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/24/23aebdd326813c67_300x300.jpg" alt="now"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19961" target="_blank" title="想和你一起这样走下去"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/24/5a780800338f1f24_300x300.jpg" alt="想和你一起这样走下去"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19960" target="_blank" title="小姐姐太美了"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/21/d51f0b120c4a5c5b_300x300.jpg" alt="小姐姐太美了"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19959" target="_blank" title="我的小可爱啊"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/21/6dafaff2a6fd261e_300x300.jpg" alt="我的小可爱啊"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19958" target="_blank" title="你拍风景，我拍你，大概就是最美好的事了吧"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/21/f3b11ad6924284b4_300x300.jpg" alt="你拍风景，我拍你，大概就是最美好的事了吧"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19954" target="_blank" title="晴朗的午后，美丽的你"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/17/7d5042a9a3f31e0a_300x300.jpg" alt="晴朗的午后，美丽的你"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19953" target="_blank" title="千玺大佬来巡街了"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/17/2604686c5e2c2482_300x300.jpg" alt="千玺大佬来巡街了"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19950" target="_blank" title="喵~"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/14/36e09cd2d2d26d14_300x300.jpg" alt="喵~"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19949" target="_blank" title="酷boy"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/14/52cd67f997529d86_300x300.jpg" alt="酷boy"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19948" target="_blank" title="静谧"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/12/c9e4ed5a1a54b7d2_300x300.jpg" alt="静谧"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19947" target="_blank" title="小清新花朵壁纸"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/10/8084675e1387a842_300x300.jpg" alt="小清新花朵壁纸"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19945" target="_blank" title="杨幂小仙女又下凡了"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/07/caa6c6d36f87584b_300x300.jpg" alt="杨幂小仙女又下凡了"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19944" target="_blank" title="不一样的我"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/04/a11061e0494ac07b_300x300.jpg" alt="不一样的我"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19943" target="_blank" title="睡着的小公主"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/04/6299f1bdf282e583_300x300.jpg" alt="睡着的小公主"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19942" target="_blank" title="你就是我的wife"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/12/04/5f1c20f112339220_300x300.jpg" alt="你就是我的wife"  class="lazyload" ></a></div></li>
+				<li><div><a href="/posts/photo/19941" target="_blank" title="时尚欧美女生街拍"><img src="/dist/images/placeholder.png" data-src="https://img.tuzhaozhao.com/2018/11/29/dff1472aa10a2288_300x300.jpg" alt="时尚欧美女生街拍"  class="lazyload" ></a></div></li>
+			</ul>
+			</div>
+		</div>
+		<div class="pageInfo">
+<a href="/p/1" class="active">1</a><a href="/p/2">2</a><a href="/p/3">3</a><a href="/p/4">4</a><span class="elli">...</span><a href="/p/735">735</a><a href="/p/2"><i class="nextpage"></i></a></div>
+	</div>
+		<footer>
+                         <p><a href="/about/?key=copyright" target="_blank"> 版权声明 </a> <span class="dot"></span><a href="/about/?key=memberAgreement" target="_blank"> 用户服务协议 </a> <span class="dot"></span><a href="/about/?key=platformGuide" target="_blank"> 平台使用指南 </a> <span class="dot"></span><a href="https://www.tuzhaozhao.com/e/tool/feedback/?bid=1" target="_blank"> 意见反馈 </a></p>
+                         <p><span>Copyright © 2017</span> <span class="dot"></span> <a href="/" target="_blank">兔找找 tuzhaozhao.com</a></p>
+                         <p><span>南京贝悦达信息技术有限公司</span><span class="dot">|</span><a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备14032119号-3</a></p>
+		</footer>
+
+<div class='goToTop'><span class='topArrow'></span><span class="topText">返回顶部</span></div>
+<%- include('public/bdTJ')%>
+<%- include('public/bdPush')%>
+</body>
+</html>

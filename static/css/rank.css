@@ -1,0 +1,177 @@
+body{
+	background-color: #fff;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+/*top样式*/
+.rank{
+	width: 960px;
+	margin:0 auto;
+	padding: 50px 0;
+}
+.rank-top{
+}
+.rank-top-list{
+	display: inline-block;
+	box-sizing: border-box;
+	
+	padding-left:92px;
+	padding-right:92px;
+
+	overflow: hidden;
+
+}
+.rank-top-list img{
+	width: 100%;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.rank-list-info{
+	text-align: center;
+	padding: 25px 0;
+}
+.rank-username{
+	color:#444;
+	font-size: 1em;
+}
+.top-pad{
+	padding: 12px 0;
+}
+.list-pad{
+	padding: 8px 0;
+}
+.rank-info-sex span{
+	font-size: .8em;
+	color:#9a9a9a;
+	margin-left: 4px;
+}
+.usersex{
+	width:15px;
+	height:15px;
+	background-image:url(/dist/images/pub.png);
+	background-size:48px 112px;
+	display:inline-block;
+	vertical-align: middle;
+}
+.female {
+    background-position: -33px -65px;
+}
+.male{
+	background-position:-33px -49px;
+}
+.rank-head{
+	position: relative;
+}
+.medal{
+	display: inline-block;
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	bottom: 2px;
+    right: -5px;
+
+	background-image: url('/dist/images/medal.png');
+	 background-size: 36px;
+	background-repeat: no-repeat;
+	font-style: normal;
+	display: block;
+	text-align: center;
+    color:#fff;
+}
+.rank1{
+	width: 48px;
+	height: 48px;
+	background-size:48px;
+	background-position: 0 -68px;
+}
+.rank1:after{
+	content:'1';
+	font-size: 16px;
+    line-height: 34px;
+}
+.rank2{
+	background-position: 0 -104px;
+}
+.rank2:after{
+	content:'2';
+	font-size: 14px;
+    position: absolute;
+    top: 1px;
+    right: 14px;
+}
+.rank3:after{
+	content:'3';
+	font-size: 14px;
+    position: absolute;
+    top: 2px;
+    right: 14px;
+}
+.top1{
+	width: 340px;
+}
+.top2{
+	width: 310px;
+	padding-top:33px;
+	float: left; 
+}
+.top3{
+	float: right;
+	width: 310px;
+	padding-top:33px; 
+}
+
+.top1 img{
+	border: 4px solid #ffcc33;
+}
+.top2 img{
+	border: 4px solid #c0c0c1;
+}
+.top3 img{
+	border: 4px solid #ba703e;
+}
+
+/*list样式*/
+.rank-list li{
+	padding: 25px 115px;
+	border-bottom: 1px solid #eeeeee;
+}
+.rank-info{
+	float: left;
+}
+.rank-info img{
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.rank-info-detail{
+	display: inline-block;
+	margin-left: 12px;
+}
+.guanzhuBtn{
+	width: 80px;
+    height: 32px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 32px;
+    background: #ff6666;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+.has-done{
+	background-color:#eeeeee;
+	color:#999;
+}
+.list-btn-margin{
+	margin-top: 12px;
+}
