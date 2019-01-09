@@ -5,6 +5,7 @@ import path from 'path'
 import render from 'koa-ejs'
 import router from './router'
 const app = new Koa
+let __dirname = path.resolve(path.dirname(''))
 render(app, {
     root: path.join(__dirname, 'views'),
     layout: false,
