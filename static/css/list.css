@@ -33,7 +33,7 @@
 .pageInfo a {display:inline-block;width:24px;height:24px;border-radius:50%;line-height:24px;margin-right:16px;}
 .pageInfo a:hover {background:#aaa;color:#fff;}
 .pageInfo a.active {color:#fff;background:#ff6666;}
-.pageInfo i {background:url(../images/arrow.png) no-repeat;width:16px;height:16px;display:inline-block;background-size:64px 32px;margin-bottom:2px;vertical-align:middle;}
+.pageInfo i {background:url(/images/arrow.png) no-repeat;width:16px;height:16px;display:inline-block;background-size:64px 32px;margin-bottom:2px;vertical-align:middle;}
 .pageInfo i.pagepre {background-position:-16px 0;}
 .pageInfo i.pagepre:hover {background-position:-50px -15px;}
 .pageInfo i.nextpage {background-position:0 0;}
@@ -41,7 +41,7 @@
 .elli {color:#646363;display:inline-block;width:24px;height:24px;margin-right:16px;}
 /*loading now*/
 .loaddingNow,.loaddingFinish {text-align:center;font-size:14px;color:#666;padding:15px 0;}
-.loaddingNow:before {content:'';display:inline-block;width:14px;height:15px;background-image:url(../images/loadding.gif);background-size:contain;vertical-align:middle;background-repeat:no-repeat;margin-right:4px;}
+.loaddingNow:before {content:'';display:inline-block;width:14px;height:15px;background-image:url(/images/loadding.gif);background-size:contain;vertical-align:middle;background-repeat:no-repeat;margin-right:4px;}
 
 /*专辑页*/
 .album-wrap {max-width:960px;margin:0 auto;padding:50px 0 20px;}
@@ -59,7 +59,7 @@
 .user-name {font-size:16px;color:#666;margin-left:16px;}
 .album-share {float:right;margin-right:-12px;}
 .album-share>.item-share {margin-top:12px;background-color:#fff!important;}
-.album-collect {width:100px;height:32px;display:inline-block;text-align:center;color:#666;font-size:16px;border:1px solid #e3e3e3;border-radius:4px;line-height:32px;background-image:url(../images/favaD3.png);background-size:70%;background-repeat:no-repeat;background-position:15px -27px;vertical-align:middle;}
+.album-collect {width:100px;height:32px;display:inline-block;text-align:center;color:#666;font-size:16px;border:1px solid #e3e3e3;border-radius:4px;line-height:32px;background-image:url(/images/favaD3.png);background-size:70%;background-repeat:no-repeat;background-position:15px -27px;vertical-align:middle;}
 .album-collect.col {border-color:#ff4a38;background-position:15px 9px;}
 .editAInfo {border:1px solid #e3e3e3;width:60px;height:32px;color:#a9a9a9;display:inline-block;text-align:center;border-radius:4px;line-height:32px;vertical-align:middle;font-size:.9rem;margin-left:16px;}
 /*lazyload*/

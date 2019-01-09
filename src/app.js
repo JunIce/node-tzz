@@ -10,7 +10,7 @@ render(app, {
     layout: false,
     viewExt: 'html',
     cache: false,
-    debug: true
+    debug: false
 })
 app.use(koaStatic(path.join(__dirname, '../static')))
 app.use(logger())

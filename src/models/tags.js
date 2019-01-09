@@ -4,13 +4,22 @@ export default class Tag extends DB {
     constructor() {
         super()
     }
-
-    //list
-    getRecommendTags() {
-        this.connection.then(async con => {
-            let sql = `select id,title,titleurl,titlepic from ${this.prefix}ecms_photo order by id desc limit ${pageSize}, ${page*pageSize}`
-            let res = await con.query(sql)
-            console.log(res)
-        })
+    //recommend-tags
+    async getRecommendTags() {
+        let sql = `select tagid,tagname from ${this.prefix}enewstags where isgood > 0 order by myorder asc`;
+        return await this.query(sql);
     }
+
+    // taginfo
+    async getTagDetail(tagid) {
+        let sql = `select tagname,tagid from ${this.prefix}enewstags where tagid = ${tagid} limit 1`;
+        return await this.query(sql);
+    }
+
+    // get list by tagid
+    async tagsList(tagid, page=1, pageSize=30) {
+        let sql = `select id from ${this.prefix}enewstagsdata where tagid = ${tagid} order by newstime desc limit ${pageSize},${pageSize*page}`;
+        return await this.query(sql);
+    }
+
 }

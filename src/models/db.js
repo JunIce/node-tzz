@@ -1,4 +1,5 @@
-import mysql from 'promise-mysql'
+import mysql from 'mysql'
+import Promise, { resolve } from 'bluebird'
 import DbConf from '../config/db.conf'
 
 export default class Db {
@@ -7,7 +8,24 @@ export default class Db {
         this.prefix = DbConf.tablePrefix;
     }
 
-    async getInstance() {
-        return await mysql.createConnection(DbConf)
+    getInstance() {
+        return mysql.createConnection(DbConf)
+    }
+
+    /**
+     * 
+     * @param {string} sql 
+     */
+    query(sql) {
+        let self = this
+        return new Promise((resolve, reject) => {
+            self.connection.query(sql, function(err, data, fields){
+                if(err) {
+                    reject(err)
+                }
+                let args = Array.prototype.slice.call(arguments, 1)
+                resolve.call(self, data)
+            })
+        })
     }
 }

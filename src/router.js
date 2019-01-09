@@ -3,8 +3,8 @@ import Site from './controllers/SiteController'
 
 let route = new Router()
 route
-    .get('/', async (ctx, nxt) => {
-        await ctx.render('index', Site.index())
-    })
+    .get('/', Site.index)
+    .get('/label/:tagid', Site.tagList)
+    .get('/posts/photo/:photo_id', Site.infoDetail)
 
 export default route
