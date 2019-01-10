@@ -28,9 +28,24 @@ export default class Tag extends DB {
      * @param {int} page 
      * @param {int} pageSize 
      */
-    async tagsList(tagid, page=1, pageSize=30) {
-        let sql = `select id from ${this.prefix}enewstagsdata where tagid = ${tagid} order by newstime desc limit ${pageSize},${pageSize*page}`
+    async tagsList(tagid, page=1, pageSize=24) {
+        let sql = `select id from ${this.prefix}enewstagsdata where tagid = ${tagid} order by newstime desc limit ${pageSize*page}, ${pageSize}`
+        console.log(sql)
         return await this.query(sql)
     }
 
+    /**
+     * 
+     * @param {int} photo_id 
+     */
+    async getTagsByPhotoId(photo_id) {
+        let sql =   `select
+                        tagid, tagname 
+                    from 
+                        ${this.prefix}enewstags
+                    where tagid in (
+                        select tagid from ${this.prefix}enewstagsdata where id = ${photo_id}
+                    ) order by tagid desc`
+        return await this.query(sql)
+    }
 }

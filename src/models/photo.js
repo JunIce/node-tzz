@@ -11,8 +11,8 @@ export default class Photo extends DB {
      * @param {int} page 
      * @param {int} pageSize 
      */
-    async getList(page=1,pageSize=20) {
-        let sql = `select id,title,titleurl,titlepic from ${this.prefix}ecms_photo order by id desc limit ${pageSize}, ${page*pageSize}`
+    async getList(page=1,pageSize=24) {
+        let sql = `select id,title,titleurl,titlepic from ${this.prefix}ecms_photo order by id desc limit ${page*pageSize},${pageSize} `
         return await this.query(sql)
     }
 

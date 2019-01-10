@@ -1,0 +1,5 @@
+<% if(tags.length > 0) {%>
+<div class="cont-tags"><% tags.forEach(function(tag){ %>
+<a href="/label/<%= tag.tagid%>/" target="_blank" alt="<%= tag.tagname%>"><%= tag.tagname%></a>
+<% })%></div> 
+<% } %>

@@ -48,7 +48,9 @@ var $user = {};
     <a href="/" class="on">推荐</a><% tags.forEach(function(tag){ %><a href="/label/<%= tag.tagid%>" alt="<%= tag.tagname%>" ><%= tag.tagname%></a><% }) %>
 </div>
 
-<div id="content"><div class="main-list" data-page="index" data-ph='1'><ul id="waterfall">
+<div id="content">
+    <div class="main-list" data-page="tags" data-tid = "<%= tagid %>" data-ph=1>
+    <ul id="waterfall">
 <% photos.forEach(function(photo){%><%- include('photo/listitem.ejs', {photo: photo})%><% }) %>
 </ul></div></div>
         
@@ -58,7 +60,7 @@ var $user = {};
 		
 <%- include('public/footer.ejs')%>
 <div class='goToTop'><span class='topArrow'></span><span class="topText">返回顶部</span></div>
-<%- include('public/bdTJ')%>
-<%- include('public/bdPush')%>
+<%- include('public/bdTJ.ejs')%>
+<%- include('public/bdPush.ejs')%>
 </body>
 </html>
