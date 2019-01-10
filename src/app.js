@@ -3,6 +3,7 @@ import koaStatic from 'koa-static'
 import logger from 'koa-logger'
 import path from 'path'
 import render from 'koa-ejs'
+import bodyParser from 'koa-bodyparser'
 import router from './router'
 const app = new Koa
 let __dirname = path.resolve(path.dirname(''))
@@ -13,7 +14,9 @@ render(app, {
     cache: false,
     debug: false
 })
-app.use(koaStatic(path.join(__dirname, '../static')))
+
+app.use(bodyParser())
+app.use(koaStatic(path.join(__dirname, 'web')))
 app.use(logger())
 app.use(router.routes())
 

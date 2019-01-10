@@ -26,6 +26,10 @@ module.exports = {
             "error",
             "never"
         ],
+        // "semi-style": [
+        //     "error", 
+        //     "last"
+        // ],
         'no-console': 'off',
     }
 };

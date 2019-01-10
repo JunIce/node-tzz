@@ -4,9 +4,10 @@
     "eslint.validate": [
         "javascript",
         {
-            "language": "javascript",
-            "autoFix": true
+        "language": "javascript",
+        "autoFix": true
         }
     ],
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": false
 }

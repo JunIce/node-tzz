@@ -1,0 +1,583 @@
+.tags {
+  padding: 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 980px;
+  margin: auto;
+}
+.tags a {
+  line-height: 28px;
+  display: inline-block;
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+  margin: 6px 10px;
+  padding: 0 18px;
+}
+.tags a.on {
+  background: #ff6666;
+  color: #fff;
+  border-radius: 5px;
+}
+.tags a:hover {
+  background: #ff6666;
+  color: #fff;
+  border-radius: 5px;
+}
+.tags:after {
+  display: block;
+  clear: both;
+  content: '';
+  visibility: hidden;
+  height: 0;
+}
+
+.contWrap {
+  padding-top: 25px;
+}
+.cont {
+  padding: 20px 0 36px 0;
+  width: 550px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+.cont-user,
+.cont-img-wrap,
+.cont-act,
+.cont-say,
+.cont-other,
+.cont-tags {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.cont-user-hd {
+  overflow: hidden;
+}
+.cont-user-hd img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.cont-user-info,
+.cont-user-hd {
+  display: inline-block;
+  height: 68px;
+  float: left;
+}
+.cont-user-info {
+  margin-left: 16px;
+  line-height: 32px;
+}
+.cont-user-info p {
+  font-size: 16px;
+  color: #333;
+}
+.cont-user-info span {
+  font-size: 12px;
+  color: #999;
+}
+.cont-addFans {
+  width: 96px;
+  height: 32px;
+  float: right;
+  background-color: #fe4b38;
+  display: inline-block;
+  border-radius: 5px;
+  background-image: url(/static/images/guan.png);
+  background-size: 120px;
+  background-position: -12px 0;
+  margin-top: 16px;
+}
+.cont-addFans.add {
+  background-position: -12px -61px;
+  background-color: #ddd;
+}
+.cont-user {
+  margin: 25px 24px 0 24px;
+}
+.cont-act {
+  margin-bottom: 12px;
+}
+.cont-share,
+.cont-good {
+  display: inline;
+  line-height: 32px;
+}
+.cont-good {
+  margin-left: 8px;
+  height: 28px;
+}
+.cont-say-good {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.cont-say-bad i,
+.cont-say-good i {
+  background: url(/static/images/reIco.png) no-repeat;
+  background-size: 72px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.cont-say-good i {
+  width: 33px;
+  height: 33px;
+  background-position: 0 -139px;
+}
+.cont-say-good i.sg {
+  background-position: -40px -139px;
+}
+.cont-favor a {
+  padding: 0 10px;
+  height: 32px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  display: inline-block;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  font-family: 'microsoft yahei';
+  font-size: 12px;
+  line-height: 32px;
+}
+#photo-favor i {
+  background-image: url(/static/images/fava.png);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin: 0 4px;
+  background-position-y: -26px;
+}
+#photo-favor span {
+  margin: 0 4px;
+}
+.cont-favor a.ond {
+  color: #ff4a38;
+}
+.cont-favor a.ond i {
+  background-position-y: 0 !important;
+}
+.cont-share > span,
+.album-share > span {
+  font-size: 14px;
+  color: #999;
+  margin-right: 8px;
+}
+.bdsharebuttonbox span {
+  color: #666;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.item-share a {
+  background-image: url(/static/images/reIco.png) !important;
+  width: 32px;
+  height: 32px !important;
+  display: inline-block;
+  background-size: 72px;
+  padding: 0 !important;
+  margin: 0 12px 0 0 !important;
+}
+.bds_sqq {
+  background-position: 0 0 !important;
+}
+.bds_sqq:hover {
+  background-position: -40px 0 !important;
+}
+.bds_qzone {
+  background-position: 0 -70px !important;
+}
+.bds_qzone:hover {
+  background-position: -40px -70px !important;
+}
+.bds_weixin {
+  background-position: 0 -35px !important;
+}
+.bds_weixin:hover {
+  background-position: -40px -35px !important;
+}
+.bds_tsina {
+  background-position: 0 -104px !important;
+}
+.bds_tsina:hover {
+  background-position: -40px -104px !important;
+}
+.cont-img-wrap img {
+  width: 100%;
+}
+.cont-other {
+  padding: 12px 0;
+}
+.cont-tags {
+  padding: 12px 0;
+}
+.cont-tags a {
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 12px;
+  padding: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 24px;
+  font-size: 12px;
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.cont-say {
+  padding: 12px 0;
+}
+.cont-say p {
+  font-size: 14px;
+  color: #666;
+  line-height: 20px;
+}
+.cont-ot {
+  float: right;
+  line-height: 28px;
+}
+.cont-ot a {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  text-align: center;
+  background-image: url(/static/images/reIco.png);
+  background-size: 72px;
+  background-position: 0 -175px;
+}
+.cont-album {
+  padding: 40px 0;
+}
+.cont-album h2 {
+  font-size: 14px;
+  color: #555;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+.cont-album {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 80px;
+}
+.cont-album ul {
+  width: 990px;
+}
+.cont-album ul:after {
+  display: block;
+  clear: both;
+  content: '';
+  visibility: hidden;
+  height: 0;
+}
+.cont-album ul li {
+  float: left;
+  display: inline-block;
+  width: 225px;
+  box-sizing: border-box;
+  margin: 0 20px 20px 0;
+  padding: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+}
+.cont-album ul li div img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+  min-height: 100%;
+}
+.first-public {
+  background-color: #ff6666;
+  color: #fff !important;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 0px 10px;
+  font-size: 12px;
+  line-height: 24px;
+}
+.al-list-title {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+.al-list-user img {
+  width: 24px !important;
+  height: 24px;
+  border-radius: 100px;
+}
+.al-list-user span {
+  line-height: 24px;
+  margin-left: 6px;
+  font-size: 12px;
+  color: #999;
+}
+
+#showTips {
+  width: 100%;
+  height: 100%;
+}
+.bg-color {
+  position: fixed;
+  background-color: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.tipsBox {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 100;
+}
+.tipsBox-title {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 36px;
+}
+.tipsBox-title h4 {
+  color: #333;
+  font-size: 1em;
+  font-weight: 400;
+}
+.tipsBox-main {
+  padding: 30px 18px;
+}
+
+/*添加收藏*/
+.add-album-hdPic .create-album {
+  display: inline-block;
+  padding: 0 15px;
+}
+.add-album-hdPic {
+  max-width: 222px;
+  max-height: 222px;
+  display: inline-block;
+  padding: 0 15px;
+}
+.add-album-hdPic img {
+  width: 100%;
+  vertical-align: middle;
+  display: block;
+}
+.create-album {
+  width: 278px;
+  padding: 0 15px;
+  display: inline-block;
+}
+.album-list-wrap {
+  border: 1px solid #999;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+.tips-album-list {
+  overflow-y: scroll;
+  height: 126px;
+  color: #666;
+}
+.tips-album-list span {
+  line-height: 32px;
+  display: block;
+  text-indent: 8px;
+  cursor: pointer;
+}
+.on {
+  background-color: #eee;
+}
+.create-album-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #eee;
+  color: #ccc;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 14px;
+}
+.create-album-text input {
+  margin-left: 10px;
+  line-height: 33px;
+  outline: 0;
+  border: 1px solid #999;
+  border-radius: 4px;
+  text-indent: 10px;
+  width: 200px;
+  color: #666;
+}
+.create-album-text a {
+  width: 50px;
+  text-align: center;
+  line-height: 33px;
+  background-color: #ff6666;
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+.finish-favor {
+  float: right;
+  margin-top: 8px;
+  width: 64px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  background-color: #ff6666;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.boxClose {
+  background: url(/static/images/closes.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  text-indent: -9999px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+/*接受条款*/
+.login-accept {
+  margin-top: -10px;
+}
+.login-accept span {
+  font-size: 12px;
+  color: #666;
+}
+.login-accept span a {
+  color: #ff6666;
+}
+/*举报btn*/
+.accussubB {
+  margin-top: 30px;
+  text-align: center;
+}
+.accusSub {
+  padding: 8px 20px;
+  display: inline-block;
+  color: #fff;
+  background: #ff6666;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+.accussWrap {
+  width: 50%;
+  padding: 20px 0;
+  text-align: center;
+}
+.accussWrap span {
+  display: inline-block;
+  width: 80px;
+  text-align: left;
+}
+.accussTitle {
+  margin: 10px 0 10px 20px;
+}
+.accussTitle,
+.accussWrap span {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+}
+.checkboxWrap {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: #ddd;
+  border-radius: 100%;
+  position: relative;
+  vertical-align: middle;
+}
+.smallRound {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background: #fff;
+  z-index: 2;
+  cursor: pointer;
+}
+.checkboxWrap label {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #ddd;
+}
+.checkboxWrap input[type='checkbox'] {
+  visibility: hidden;
+}
+.checkboxWrap input[type='radio'] {
+  visibility: hidden;
+}
+.checkboxWrap input[type='checkbox']:checked + label {
+  background: #ff6666;
+}
+.checkboxWrap input[type='radio']:checked + label {
+  background: #ff6666;
+}
+
+.link-trangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+
+.link-tips {
+  width: 124px;
+  height: 52px;
+  border-radius: 5px;
+  line-height: 52px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+.link-tips-trangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: -12px;
+  top: 23px;
+  transform: rotate(-90deg);
+}
+.link-url {
+  color: #fff;
+}
